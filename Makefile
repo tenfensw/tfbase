@@ -1,9 +1,9 @@
-CC ?= cc
+\CC ?= cc
 CFLAGS := -Wall -Werror -std=c99 -I. -std=c99 $(CFLAGS)
 
 ifeq ($(shell uname),Darwin)
 MACOSX_VERSION_MIN ?= 10.10
-CFLAGS := -mmacosx-version-min=$(MACOSX_VERSION_MIN)
+CFLAGS := $(CFLAGS) -mmacosx-version-min=$(MACOSX_VERSION_MIN)
 endif
 
 ifdef $(DEBUG)
