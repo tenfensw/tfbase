@@ -1,0 +1,9 @@
+*.pbxuser
+xcuserdata
+.DS_Store
+Thumbs.db
+*.pdb
+*.lib
+*.a
+*.o
+*.dSYM
