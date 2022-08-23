@@ -1,0 +1,23 @@
+tfbase is a portable C99 library providing some of the functionality that vanilla C
+doesn't have, like lists & string ops among other things.
+
+The library is licensed under Zero-clause BSD license and, hence, can be used in
+any commercial or personal project without any obligations or warranty.
+
+On UNIX platforms, you can build libtfbase.a using the provided Makefile:
+
+$ make
+
+On Macs it is possible to target the output library for an older version of macOS, if
+needed:
+
+$ make MACOSX_VERSION_MIN=10.10
+
+The debug version can be compiled with the DEBUG flag enabled:
+
+$ make DEBUG=1
+
+The library is still WIP and has no fixed release cycle.
+
+As for the docs, consult tfbase.h (the ONLY public header in the library) for 
+usage info.
