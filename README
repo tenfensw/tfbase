@@ -6,9 +6,9 @@ On UNIX platforms, you can build libtfbase.a using the provided Makefile:
 
 $ make
 
-On Macs it is possible to target the output library for an older version of macOS, if needed:
+On Macs you can use the provided tfbase.xcodeproj to build the library with Xcode 3.1+. It is also possible to build it with make and it is even possible to target an older version from macOS with make:
 
-$ make MACOSX_VERSION_MIN=10.10
+$ make MACOSX_VERSION_MIN=10.5
 
 The debug version can be compiled with the DEBUG flag enabled:
 
