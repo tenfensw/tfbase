@@ -93,14 +93,6 @@ bool tf_stringbuilder_ends_with(const tf_stringbuilder_ref builder, const char* 
 
 void tf_stringbuilder_release(tf_stringbuilder_ref builder);
 
-/// process object
-typedef struct tf_process_s* tf_process_ref;
-
-tf_process_ref tf_process_init_with_argc_argv(const tf_index_t argc, const char** argv);
-tf_process_ref tf_process_init_with_arguments(tf_list_ref arguments);
-
-void tf_process_release(tf_process_ref process);
-
 //
 // misc C stuff
 //
